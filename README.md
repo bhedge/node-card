@@ -3,7 +3,7 @@
 ## The personal business card of Brandon Hedge
 ![](https://github.com/bhedge/node-card/raw/master/card.png)
 
-Shamelessly copied and modified from @bitandbang & @buzuli -- thanks!
+Thanks @bitandbang & @buzuli! So long and thanks for all the fish.
 
 ## License
 MIT - Keep sharing...
