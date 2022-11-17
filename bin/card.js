@@ -8,87 +8,84 @@ const boxOptions = {
   },
   text: '',
   hAlign: 'left',
-  vAlign: 'left'
+  vAlign: 'center'
 };
 
-const picture = `7777777!^. :::^~~!!7?JYYYYYYYY5555555555Y55YY55YYYYYJ7~~!!~!!!!!!~~~~~~~~~!!!!!!!!!!!!!!!!!!!!!!!!!!
-77777!^::. .::^~!!77?JYYYYY555555555555555555YY55555Y5?~~~~~~~!!~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!!!!!!!
-7777!. ..  .^^~~!7??JYYYYYY5555555555555555555555555555?~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!
-7777:      .^~~!!77?JYYYYY5555555555555555555555555555557~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!
-777~       .:^~~!!77?JYYYY55555555555YYYYYYYYYY555555555J~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!
-777:       .:^^^~!77JYYYYY5YYYYYYYYYYYYYYYYYYYYYY5555555Y~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!~!!!!
-77!.       :^~!77??JJYYYYY55555YYYYYY55555PPPPPP5Y5Y55555!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!~!!!!!!
-77~       .^!?Y5PPPPPP55555555555555PPGBBB###BBGGP555YY55!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!~~!!!!!
-77^      .^!J5PGGGGGGGPPPP5555555PPPGGGGGGGGGGGGGGG55YYY57~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!
-~!:     .^~!7?Y555PPPPPPP555YY55PPPPGGGGGGGGGGGPPPPP5YYYP?~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!~!!!!!!!!
-!:.    :^^::~7J5PPGBBBBGG5YJJYY55PPGGBBBBGGGGPPGGPPPP5YY5?!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!~!!!
-Y7    :!!7?7!JYPPPB&&&&BGPY7?Y55PPGGB#BBGGGB#BBBBGPP55YY55P!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!
-J!   .!???!^^!Y5PPGBBBBGP5?^?555PPPGBBBGGPGB#BGGGGPP55YYYPG7~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!~~~~!!!!!!
-!^~  .~!7?77?J55PPPPGPP5Y?^:7YY5PPPPPPGGGGGGPPPPPPP55YYY5PP!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!~~!!!!!
-:7!   .:~7?JY55PPPPP55Y?!^.^7Y5555PP55PPPP5555555YYYYYYY5PJ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!
-:7~    :!7?YYY5555555Y?~^::!?YY5555555555555555YYYYYYYYY5P?~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!
-::^    ^!7?JYY55555P5Y?~..~?YYYYY555PP555555YYYYYYYJYYYY55?~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!
-: .    ^!?JYY555PPPP5?!^  !?YYYYYY555PPPP55555YYYYJJYYYY5YJ~~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!
-!^.   .^!?JY55PPPPPPJ:^!!~7J55PP5PP555PPGPP55555YYYYYYYY55?~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!~~~~!!!!!!
-77!..:::!?JY5PPPP5555JYPPP5?YPPPGGGGGPPPPGGPP5555Y555YY55?~~~~~~~~~~~~~~~~~~~~~~~~!~!!!!!!~~~~~!!!!!
-77!.:^:^!J5PGGPP55YYYY555PGGPGGGGGGPPP5555PGGPP5555555555!~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!
-77!.^~^~?5GBBGG5YJYYY555PPGGGGGGGGPPPPPPPPPPGGPP55555555Y~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!
-777::!~^7PGPGBGBGYJ??JYY555PPPPPPPPPPPPPPGGPPGGP5Y5PP555?~~~~~~~~~~~~~~!777777777777777!!!!!!!!!!!!!
-777~.~7!~JPPPGG5PGBGPY5J5YY5PPPGPGGGGGGGGBGGPGP55Y555555!~~~~~~!~~~~~~~7?!!!!!!!!!!!!!7?!!!!!!!!!!!!
-7777^:~?7!755PP5J????J55P5Y55PPPPGGBBBBGBBGPGP555555555J~~~~~~!~!77777777777~!!!!!!777777777777!!!!!
-77777::~7?77?J55J77~^^7YPPPGGPPGGPPPP5555PPP555PPP555P5!~!!!!!!!!7777777777!!!!!!!!!77777777777!!!!!
-777777^:~!77!^!JY?7!~~7J5PPPPPPPPP55555555PPPPPPPPP5P57~!!!!!!!!!!~~~~~7?7!!77!77777!77?!!!!!!!!!!!!
-7777777~:^~!!^:~7YY?77?J5PGGGGGGPPP55555555PPPPPPPPPY!~!!!!!!!!!!!!!!!!!777777777777777!!!!!!!!!!!!!
-7777777!..:^^^::~7YYJ??JY5PPPPPPP555P555555PPPPPPPPY!^!7!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-77777777: .::::::^7JJ??JYY555PPPP55PPP5555PPPPPPP5?~~~?BP?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-77777777~ ....::::^!?JJ555PPPP5P55555PPPPPGGPPP5J!~~~~?B#BY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-77777777~ ....:::::^!?Y55PPPGGPPPPPPP5PPGGGPPY?!~~~~75B####57!77!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-7777777!::...:::^^^^~!?Y5PPGGGGGPPPPPPGGP5Y?!~~~~!75B#######GJ!!777!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!77
-7777777^:! .:::^^^~~!!7?JYJY55PPPPGGP5YJ7!!!!!!!7YB&#########BP?!77777!!!!!!!!!!!!!!!!!!!7!!!!!!!!77
-7777777:.7^..:^^^~!7??JJYY55PPPPP5YJ77!!!!!!!!?YB############B#B577!!!7777!!!!!!!!!!!!!!!777!7777777
-777777?: ~J!:::^^~!7???JJJYYYJJ?777!!!!!!!!!?YG###############BBBBGPY?7!!777777777!77!77777777777777
-JY5555Y ^!!7~^~!!!?777??~^~!!!!!!!!!!!!!!!7JP#&#################BB####G5J7!!777777777777777777777777
-GGP5PB?~5??7!!!JYYYY5GGGP?~!!!!!!!!!!!!77?5B############################BGY?!!!777777777777777777777
-P55PBG~JJ!!7!?5YJ55PGPPGBB57!!!!!!!!!77?YG#########################&####BBBBPY?7!7777777777777777777
-55PB#!~J77~!?JJ5YPGG5PPPGBGBY!!!!!!77?J5B##########################&####BBBBBBBGY?7!!!!7777777777777
-5G#B?~YJ~~!7Y555GGPPGGBBGGP55J!~!!77?YG###########################&######BBBBBBBBBGP5YJJ?77!77777777
-B#5!7JJ!!!YP5PGGGBGGBBGPY???JYJ7!!7?5B##################&&&&&&&&&&&#########BBBBBBBB###BBGPYJ77!!!!7
-&G?J7~^:!J5PPGBBBGBGP5J777?????J?7JG###################&&&&&&&&&&############BBBBBBBBBBBBBBBBBGP5Y?7
-PJ~.   ~YGBPBBBGBG5Y?7777??????JJYB######################&&&&&&&##BBBBBBBB######BBBBBBBBBBBBBBBBBBBB
-!.   .~J5PGGBBBBP7!!!!777????JJ?YB###################BBBBB##&&&##BBBBBBBBBBB########################
-:   :??PBPPGGGGB5~~~!!777??????5B#########BBBB#####BBBBBBBBB#&&&#BGGGGGBBBBBB#######################
-   :7?YGGPP#BPBGP!~~!!!7??????P########BBBBBBBBBBBBBBBBBBB#&&&&&#GGGGGGGBBBBBB######################
-  ^YYYPGGGPGGPBPP7!!~!7????7?PBB#####BBBBBBBBBBBBBBBBBBBB#&&&&&#GGGGGGGGGGBBBBB#####################
- :?5Y5GGPG#GGBGGPJ!~7???7?7?GBB#####BBBBBBBBBBBBBBBBBBB#&&&&&&#BGPPPGGGGGGGBBBBBBB#BB###########&##B
-:JYJPPGGPGGGG#GPP~~7???7?7?GBB####BBBBBBBBBBBBBBBBBBB#&&&&&&&#BGGPPPPGGGGGGGBBBBBBB#BBB#BGP7!!!!!!?#
-!YJYGGBGBBGGPPGPJ!77777?7?GBB####BBBBBBBBBBBGGGBGBB#&&&&&&&##BGGPPPPPGGGGGGGBBBBBBBBBBBBBGGYJYJ?JJ5#
-`.inverse;
+const picture = `77777!^. ::^~!!7?YYYYYYY5555555555YY5YYYYY?!~!~!!!!!~~~~~~~~!!!!!!!!!!!!!!!!!!!!
+7777~::. ::^~!7?JYYYYY555555555555555555555Y!~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!!
+777~     :~~!7??JYYYY55555555555555555555555Y~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!
+77!.     .^~!!77JYYYY5555555555YYYYYY555555557~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!
+77~      :^^~!77JYYYY5YYYYYYYYYYYYYYYYY555555?~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!
+77:     .^~7JJYYYY5Y55555YY5555PPGGGGGP555555J~~~~~~~~~~~~~~~~~~~~~~~~~~!!~~!!!!
+7!.     ^7Y5GBBGGPP55555555PPPGGBBBBBGGGP5YY5Y~~~~~~~~~~~~~~~~~~~~~~~~~~!~~~!!!!
+!!.   .^~!?Y5PPPPPPP555Y5PPPPGGGGGGGGGPPGP5YY5~~~~~~~~~~~~~~~~~~~~~~~~~~!~!!!!!!
+!:   .^^^~7J5PGBBBBG5YJY55PPGBBBBGGGGGGPPP5YY57~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!
+Y^  .~777~7Y5PG##&BGP?7Y55PPGBBBGGB##BBGP55YYYP?~~~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!
+?^. :!7?!!7Y5PGGGGPPJ^!Y55PPPGGGGGGGGPPPP55YY5G?~~~~~~~~~~~~~~~~~~~~~~~~~!~~!!!!
+^7.  :~7?JY5PPPPP5J7^.!Y555PP5PPPPPP55555YYYY55!~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!
+:!.   ~7JYY555555J!^:^?Y5555555555555YYYYYYYYPY~~~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!
+::.  .~7JYY55PPPPJ!..!JYYYY5PPPP5555YYYYJJYYY5Y~~~~~~~~~~~~~~~~~~~~~~~!!!!!!!!!!
+^..  .~?JY55PPPPJ^^:^7Y5555555PPPP5555YYJYYYY5J~~~~~~~~~~~~~~~~~~~~~!!!!~~~!!!!!
+7!:.::~7J55PPPP5Y?Y5YJJPPPGGGPPPPGPP555Y55YY557~~~~~~~~~~~~~~~~~~~~!!!!!~~~~!!!!
+77::^:~?5GGPP55YY555PGPGGGGGPPP55PGGP55555555J~~~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!
+77^:~^!5GGBGPYJJYY5PPPGGGGPPPPPPPPPGGP55555557~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!!!!!
+77~:!!~YPPGGGGP5YJYY55PPPPPPPPPGGGGPGP5Y5P555!~~~~~~~~~~~777777777777?!!!!!!!!!!
+777^^77!JPPGYJYYYY55YY5PPPGGBBBBBBGGP5555555J~~~~!~!77777777!~!!!!!777777777!!!!
+7777:^7?77?Y5?7~^~J5PPPPPGPPP5555PPP55PP55P5!~!!!!!!77777777!~!!!!!777777777!!!!
+77777^^!77~~?Y?!~!J5PPPGPGPP555555PPPPPPPP57~!!!!!!!!~~~!777777777777?7!!!!!!!!!
+777777::^~~:^7YY?7?5PPGGGPP5555555PPPPPPPY!~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+777777^ .::::^!JJ??YY5PPPP55PPP555PPPPPPJ~^7PJ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+777777!  ..:::^!?JY55PPP5P555PPPPPGPPPY7~~~?B#P7!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+777777~....::::^!J55PPGGPPPPPPPGGGPY?!~~~75B###P?!77!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+777777:^..::^^^~~!?Y55PPPPPGPPP5Y?7!~~~75B######BY7!77!!!!!!!!!!!!!!!!!!!!!!!!77
+77777!.!:.:^^^~!7?JYY55PPPP5YJ77!!!!!75B##########GJ7!!!777!!!!!!!!!!!!!7!!77777
+77777! ~?^::^^!7????JYYJJ?77!!!!!!!7YB###########BBBGP5J7!!777777!77!77777777777
+Y555P!^777^~77??7JY7^~!!!!!!!!!!!7JG#&##################BPJ7!!777777777777777777
+PP5PG~J?7!7?JYY5GGGB5!!!!!!!!!77?5#&######################BGY?7!!777777777777777
+55G#?!J!!7?YYYPG5PPBBGJ!!!!!77?YG#####################&###BBBBG5?7!!!!7777777777
+PB#Y~Y7!!J5YPGGPGGBGGP5J!!!77?P######################&####BBBBBBBG55YJ?77!!77777
+#G?7J7~!5P5GGGBBBGPY??JJJ7!7JG##############&&&&&&&&&########BBBBB####BGP5J?77!!
+#Y!^:.!5PPBBBBBP5J777????J?YB################&&&&&&&###BBB####BBBBBBBBBBBBBBGGPY
+?:   ~YGGGBBBP?77!77????JJP################BBB##&&&#BBBBBBBBB###########BBBBB###
+.  .7JGGPGGGBJ~~!!77?????P#######BBB#####BBBBBBB#&&#BGGGBBBBBB##################
+  :7J5GPPBGBGJ~~!!7?????G######BBBBBBBBBBBBBBB#&&&&#GGGGGGBBBBB#################
+ :J55GPGGGGGGY7~!7???7?GB#####BBBBBBBBBBBBBBB#&&&&#GGGGGGGGGBBB############&&&&#
+:?J5PGPGBGBGGY!!???77JGB####BBBBBBBBBBBBBBB#&&&&&#BGPPPGGGGGGBBBBBBBB#BBGYYYYYYB
+7YYPGGGBGGGGP7!?7777?GB###BBBBBBBBBGGBBBB#&&&&&##BGPPPPGGGGGGBBBBBBBBBBGP???77?B`.inverse;
 
 const blank = { label: '', value: '' }
-const line = { label: '--------------------------------', value: '----------------------------------------------------------------' }
+const line = { label: '----------', value: '------------------------------------------------------------------' }
 const data = {
   name: {
-    label: `${colors.white.bold(' Brandon Hedge')}`,
-    value: colors.grey(`${colors.white(' | CTO @')} ${colors.blue('Lineage Bank')} - ${colors.white('https://www.lineagebank.com')}`)  
+    label: '',
+    value: `${colors.white.bold('Brandon Hedge')}`  
+  },
+  company: {
+    label: '',
+    value: `${colors.white('CTO @')} ${colors.blue('Lineage Bank')}`
+  },
+  link: {
+    label: '',
+    value: `${colors.white('https://www.lineagebank.com')}`
   },
   npm: {
     label: 'npm 📦',
     value: colors.blue(`https://npmjs.com/~${colors.white('bhedge')}`)
   },
   github: {
-    label: 'Github 🐙',
+    label: 'github 🐙',
     value: colors.blue(`https://github.com/${colors.white('bhedge')}`)
   },
   twitter: {
-    label: 'Twitter 🐦',
+    label: 'twitter 🐦',
     value: colors.blue(`https://twitter.com/${colors.white('0x4845444745')}`)
   },
   linkedin: {
-    label: 'LinkedIn 🔗',
+    label: 'linkedIn 🔗',
     value: colors.blue(`https://linkedin.com/in/${colors.white('brandonhedge')}`)
   },
   keybase: {
-    label: 'Keybase 🔒',
+    label: 'keybase 🔒',
     value: colors.blue(`https://keybase.io/${colors.white('bhedge')}`)
   },
   npx: {
@@ -100,14 +97,16 @@ const data = {
     value: colors.black(`Sourced from @bitandbang & @buzuli -- thanks!`)
   },
   previous: {
-    label: 'History 💻',
-    value: colors.red(`[${colors.red(' npm ').bgWhite} ${colors.blue(' Elastic ').bgWhite},${colors.yellow(' LeanKit ').bgWhite},${colors.cyan(' LifePoint Health ').bgWhite},${colors.gray(' and more... ').bgWhite}]`)
+    label: 'history 💻',
+    value: colors.red(`[ ${colors.red(' npm ').bgWhite} ${colors.blue(' Elastic ').bgWhite},${colors.yellow(' LeanKit ').bgWhite},${colors.cyan(' LifePoint Health ').bgWhite},${colors.gray(' and more... ').bgWhite} ]`)
   },
 };
 
 const card = [
   blank,
   data.name,
+  data.company,
+  data.link,
   blank,
   line,
   blank,
@@ -133,8 +132,8 @@ const text = card
 
 boxOptions.text = text;
 
-console.info(colors.white(box(`100x39`, picture)))
-console.info(colors.white(box(`100x${card.length}`, boxOptions)));
+console.info(colors.white(box(`80x39`, picture)))
+console.info(colors.white(box(`80x${card.length}`, boxOptions)));
 
 
 

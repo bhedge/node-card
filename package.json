@@ -1,8 +1,8 @@
 {
   "name": "bhedge",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "Contact card for @bhedge",
-  "main": "index.js",
+  "main": "card.js",
   "bin": {
     "card": "./bin/card.js"
   },
