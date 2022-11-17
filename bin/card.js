@@ -65,11 +65,11 @@ PJ~.   ~YGBPBBBGBG5Y?7777??????JJYB######################&&&&&&&##BBBBBBBB######
 `.inverse;
 
 const blank = { label: '', value: '' }
-const line = { label: '------------', value: '---------------------------------------------------------------------------------' }
+const line = { label: '--------------------------------', value: '----------------------------------------------------------------' }
 const data = {
   name: {
-    label: '',
-    value: colors.grey(`${colors.white.bold('Brandon Hedge')} ${colors.white('| CTO @')} ${colors.blue('Lineage Bank')} - ${colors.white('https://www.lineagebank.com')}`)  
+    label: `${colors.white.bold(' Brandon Hedge')}`,
+    value: colors.grey(`${colors.white(' | CTO @')} ${colors.blue('Lineage Bank')} - ${colors.white('https://www.lineagebank.com')}`)  
   },
   npm: {
     label: 'npm 📦',
@@ -91,10 +91,6 @@ const data = {
     label: 'Keybase 🔒',
     value: colors.blue(`https://keybase.io/${colors.white('bhedge')}`)
   },
-  previous: {
-    label: '  History 👨‍💻',
-    value: colors.red(` [ ${colors.red('npm').bgWhite}, ${colors.blue('Elastic').bgWhite}, ${colors.yellow('LeanKit').bgWhite}, ${colors.cyan('LifePoint Health').bgWhite}, ${colors.gray('and many more...').bgWhite}]`)
-  },
   npx: {
     label: '$',
     value: colors.white(`npx ${colors.gray('bhedge')}`)
@@ -102,7 +98,11 @@ const data = {
   source: {
     label: '',
     value: colors.black(`Sourced from @bitandbang & @buzuli -- thanks!`)
-  }
+  },
+  previous: {
+    label: 'History 💻',
+    value: colors.red(`[${colors.red(' npm ').bgWhite} ${colors.blue(' Elastic ').bgWhite},${colors.yellow(' LeanKit ').bgWhite},${colors.cyan(' LifePoint Health ').bgWhite},${colors.gray(' and more... ').bgWhite}]`)
+  },
 };
 
 const card = [
