@@ -98,7 +98,7 @@ const data = {
   },
   previous: {
     label: 'history 💻',
-    value: colors.red(`[ ${colors.red(' npm ').bgWhite} ${colors.blue(' Elastic ').bgWhite},${colors.yellow(' LeanKit ').bgWhite},${colors.cyan(' LifePoint Health ').bgWhite},${colors.gray(' and more... ').bgWhite} ]`)
+    value: colors.red(`[${colors.red(' npm ').bgWhite},${colors.blue(' Elastic ').bgWhite},${colors.yellow(' LeanKit ').bgWhite},${colors.cyan(' LifePoint Health ').bgWhite},${colors.gray(' and more... ').bgWhite}]`)
   },
 };
 
