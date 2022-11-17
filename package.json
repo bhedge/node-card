@@ -23,7 +23,7 @@
   "author": "Brandon Hedge <brandon.hedge@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "cli-box": "^6.0.8",
-    "colors": "^1.3.3"
+    "cli-box": "^6.0.10",
+    "colors": "^1.4.0"
   }
 }
